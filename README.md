@@ -56,4 +56,4 @@ Follow these steps to run the project on your local machine:
 
 1. **Clone the repository**
    ```bash
-   git clone [https://github.com/YOUR_USERNAME/sorting-visualizer-task.git](https://github.com/YOUR_USERNAME/sorting-visualizer-task.git)
+   git clone [https://github.com/Kuberalakshmi-24/interview-test/tree/main]
