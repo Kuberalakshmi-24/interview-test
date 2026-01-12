@@ -1,70 +1,59 @@
-# Getting Started with Create React App
+# 🫧 Bubble Sort Visualizer
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A dynamic and interactive web application built with **React** to visualize the **Bubble Sort algorithm** in action. This project was developed as part of a Frontend Technical Assessment.
 
-## Available Scripts
+It features a custom implementation of the sorting logic without relying on external libraries, complete with animations, theme toggling, and speed controls.
 
-In the project directory, you can run:
+🚀 **Live Demo:** [Click Here to View App](https://interview-test-blue.vercel.app/)
 
-### `npm start`
+---
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## ✨ Features
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### Core Requirements
+- **Visual Representation:** Vertical bars represent array elements with height corresponding to values.
+- **Color Coded States:**
+  - 🟦 **Indigo/Blue:** Unsorted / Default state.
+  - 🟥 **Red:** Elements currently being compared.
+  - 🟩 **Green:** Elements that are fully sorted.
+- **Interactive Controls:** Generate new random arrays and start sorting.
+- **Algorithm:** Pure implementation of Bubble Sort (Iterative swapping).
 
-### `npm test`
+### 🌟 Bonus Features Implemented
+- **🌓 Dark / Light Mode:** Fully functional theme toggle using CSS variables.
+- **⚡ Speed Control:** Adjustable slider to control animation speed (Fast ↔ Slow) in real-time.
+- **🔢 Swap Counter:** Real-time tracking of total swaps performed during sorting.
+- **🚫 Disable Logic:** Controls are disabled during animation to prevent glitches.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+---
 
-### `npm run build`
+## 🛠️ Tech Stack
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- **Frontend:** React.js (Hooks: `useState`, `useEffect`, `useRef`)
+- **Styling:** CSS3 (Flexbox, CSS Variables for theming, Transitions)
+- **Deployment:** Vercel
+- **Constraint:** No external animation or sorting libraries used.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+---
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## ⚙️ Algorithm & Logic
 
-### `npm run eject`
+This visualizer uses the **Bubble Sort** algorithm:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+1. **Comparison:** The algorithm iterates through the array and compares adjacent elements (`arr[j]` and `arr[j+1]`).
+   - *Visual:* These two bars turn **Red**.
+2. **Swapping:** If the left element is greater than the right element, they are swapped.
+   - *Visual:* The heights of the bars are exchanged, and the **Swap Counter** increments.
+3. **Iteration:** This process repeats for every element. After each pass, the largest element "bubbles up" to its correct position at the end.
+   - *Visual:* The sorted element turns **Green**.
+4. **Completion:** The process continues until no more swaps are needed, and the entire array turns Green.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+---
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## 📦 Getting Started (Run Locally)
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Follow these steps to run the project on your local machine:
 
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+1. **Clone the repository**
+   ```bash
+   git clone [https://github.com/YOUR_USERNAME/sorting-visualizer-task.git](https://github.com/YOUR_USERNAME/sorting-visualizer-task.git)
