@@ -56,4 +56,4 @@ Follow these steps to run the project on your local machine:
 
 1. **Clone the repository**
    ```bash
-   git clone [https://github.com/Kuberalakshmi-24/interview-test]
+   git clone [https://github.com/Kuberalakshmi-24/interview-test] [ https://interview-test-blue.vercel.app/]
